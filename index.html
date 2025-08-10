@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>single-price-grid-component-master</title>
+    <link rel="shortcut icon" href="single-price-grid-component-master/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: calibri;
+    }
+
+    .main {
+        width: 100%;
+        height: 100vh;
+        background-color: #e6eff6;
+    }
+
+    .main,
+    .card,
+    .section2 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card {
+        width: 563px;
+        height: 420px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        flex-direction: column;
+    }
+
+    .section1 {
+        width: 100%;
+        height: 190px;
+        padding: 2.2em;
+        background-color: white;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .section2 {
+        height: 230px;
+        flex-direction: row;
+        border-radius: 0 0 10px 10px;
+    }
+
+    .sub-section1 {
+        width: 281.5px;
+        padding: 36px;
+        background-color: #2bb3b1;
+        border-radius: 0 0 0 10px;
+    }
+
+    .sub-section1>p,
+    .sub-section1>h3,
+    h1 {
+        color: antiquewhite;
+    }
+
+    .sub-section1 h1 {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .sub-section1>h4 {
+        padding: 10px 50px;
+        background-color: #b4d424;
+        text-align: center;
+        border-radius: 5px;
+        margin-top: 15px;
+        color: antiquewhite;
+    }
+
+    .sub-section2 {
+        width: 281.5px;
+        padding: 36px;
+        background-color: #4abebd;
+        border-radius: 0 0 10px 0;
+    }
+
+    .sub-section2>p {
+        font-size: 0.9rem;
+        padding-right: 40px;
+        color: rgb(161, 217, 239)
+    }
+
+    p.padding {
+        padding-right: 60px;
+    }
+
+    @media (max-width:35em) {
+        .card {
+            width: auto;
+            height: auto;
+        }
+
+        .section1 {
+            width: 300px;
+            height: auto;
+            padding: 25px;
+            border-radius: 5px 5px 0 0;
+        }
+
+        .section1>p {
+            font-size: 0.9rem;
+        }
+
+        .section2,
+        .sub-section1,
+        .sub-section2 {
+            width: 300px;
+            flex-direction: column;
+        }
+
+        .section2 {
+            height: auto;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .sub-section1,
+        .sub-section2 {
+            padding: 25px;
+        }
+
+        .sub-section1 {
+            border-radius: 0;
+        }
+
+        .sub-section2 {
+            border-radius: 0 0 5px 5px;
+        }
+
+        .sub-section2>p {
+            padding-right: 75px;
+            color: rgb(199, 225, 236);
+        }
+
+        p.padding {
+            padding-right: 90px;
+        }
+
+    }
+</style>
+
+<body>
+    <div class="main">
+        <div class="card">
+            <div class="section1">
+                <h2 style="color: #2bb3b1;">Join our community</h2>
+                <h3 style="color: #c5dd5a;padding-top: 0.9em;">30-day, hassle-free money back guaranytee</h3>
+                <p style="color: rgb(188, 188, 188);padding-top: 6px;line-height: 22px;">Gain access to our full library
+                    of tutorials along with expert code review. Perfect for any developers who are serious about honing
+                    their skills.</p>
+            </div>
+            <div class="section2">
+                <div class="sub-section1">
+                    <h3 style="font-size: 1.1rem;padding-bottom: 3px;">Monthly Subscription</h3>
+                    <h1 style="padding-top: 10px;font-size: 1.5rem;">&dollar;29&nbsp;<span
+                            style="font-size: 1rem;color: skyblue;">per month</span></h1>
+                    <p style="padding-top: 7px;font-size: 0.9rem;padding-bottom: 16px;">Full access for less than
+                        &dollar;1 a day</p>
+                    <h4>Sign Up</h4>
+                </div>
+                <div class="sub-section2">
+                    <h3 style="padding-bottom: 14px;font-size: 1.1rem;color: antiquewhite;">Why Us</h3>
+                    <p>Tutorials by industry experts peer & expert code review Coding exercises </p>
+                    <p class="padding">Access to our Github repos Community forum Flashcard decks</p>
+                    <p>New videos every week</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<!-- #e6eff6 -->
+<!-- #2bb3b1 -->
+<!-- #4abebd -->
+<!-- #b9d831 -->
+
+</html>
